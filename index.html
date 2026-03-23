@@ -1,94 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>ESign App</title>
+<meta charset="UTF-8">
+<title>Download ESign</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont;
-      background: #f2f2f7;
-    }
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  text-align: center;
+}
 
-    .container {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-    }
+.card {
+  background: white;
+  padding: 40px;
+  margin-top: 120px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: inline-block;
+}
 
-    .app-card {
-      background: white;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
+.card img {
+  width: 110px;
+  border-radius: 20px;
+}
 
-    .logo {
-      width: 100px;
-      border-radius: 20px;
-      margin-bottom: 15px;
-    }
+h2 {
+  margin-top: 15px;
+}
 
-    h1 {
-      margin: 10px 0;
-      font-size: 24px;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
 
-    .desc {
-      color: gray;
-      font-size: 14px;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 14px;
-      width: 100%;
-      font-size: 18px;
-      border: none;
-      border-radius: 12px;
-      background: #007aff;
-      color: white;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background: #005ecb;
-    }
-
-    .info {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #555;
-    }
-
-  </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png">
+  <h2>ESign App</h2>
 
-  <div class="app-card">
-
-    <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" class="logo">
-
-    <h1>ESign</h1>
-    <p class="desc">Install apps easily on your iPhone</p>
-
-    <a href="itms-services://?action=download-manifest&url=https://shahoalmani7-kurd.github.io/Shahab_rash/app.plist">
-      <button class="btn">⬇️ Install App</button>
-    </a>
-
-  </div>
-
-  <div class="info">
-    ⭐ Version: 1.0 <br>
-    📱 Size: 20MB <br>
-    🛠 Developer: Shahab
-  </div>
-
+  <a class="btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/shahoalmani7-kurd/Shahab_rash/main/app.plist">
+    Install
+  </a>
 </div>
 
 </body>
