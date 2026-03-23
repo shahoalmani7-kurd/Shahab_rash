@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>shahab_rash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahab Rash</title>
 
-<style>
-body {
-  font-family: Arial;
-  background: linear-gradient(#ccefff, #e6f7ff);
-  padding: 15px;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
 
-.title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-}
+        .container {
+            margin-top: 100px;
+        }
 
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  margin-top: 20px;
-}
+        h1 {
+            font-size: 50px;
+        }
 
-.button {
-  background: orange;
-  color: white;
-  padding: 10px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-</style>
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #ddd;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="title">shahab_rash 🚀</div>
+    <div class="container">
+        <h1>👋 Hello, I'm Shahab</h1>
+        <p>Welcome to my website 🌐</p>
 
-<div class="card">
-  <h2>📱 ESign</h2>
-  <a class="button" href="#">Download</a>
-</div>
+        <button onclick="showMessage()">Click Me 😎</button>
+    </div>
+
+    <footer>
+        © 2026 Shahab Rash
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to my website 😍🔥");
+        }
+    </script>
 
 </body>
 </html>
