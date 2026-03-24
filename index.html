@@ -1,28 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Apps</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My App Store</title>
+
+<style>
+body {
+  margin:0;
+  font-family: -apple-system, sans-serif;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color:white;
+  text-align:center;
+}
+
+h1 {
+  margin-top:50px;
+  font-size:28px;
+}
+
+.container {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:40px;
+  gap:20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius:20px;
+  padding:25px;
+  width:220px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  width:80px;
+  height:80px;
+  border-radius:20px;
+  margin-bottom:15px;
+}
+
+.btn {
+  margin-top:15px;
+  padding:12px 25px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.esign {
+  background:#ff9f0a;
+  color:black;
+}
+
+.video {
+  background:#0a84ff;
+  color:white;
+}
+</style>
+
 </head>
 
-<body style="text-align:center; margin-top:100px; font-family:sans-serif; background:#f2f2f2;">
+<body>
 
-<h1>Download Apps</h1>
+<h1>📱 My App Store</h1>
 
-<!-- Esign -->
-<div style="margin:20px; padding:20px; background:white; border-radius:15px;">
-<h2>ESign</h2>
-<a href="لینکی_درایڤی_ئێساین">
-<button style="padding:15px 30px; font-size:20px; background:orange; border:none; border-radius:10px;">Download</button>
-</a>
-</div>
+<div class="container">
 
-<!-- VideoStar -->
-<div style="margin:20px; padding:20px; background:white; border-radius:15px;">
-<h2>Video Star</h2>
-<a href="لینکی_درایڤی_ڤیدیۆستار">
-<button style="padding:15px 30px; font-size:20px; background:blue; color:white; border:none; border-radius:10px;">Download</button>
-</a>
+  <!-- ESign -->
+  <div class="card">
+    <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4f/63/ea/4f63ea6e-4c92-8b2e-8a49-7bb1c8c9b7c1/AppIcon-0-0-1x_U007emarketing-0-0-0-85-220.png/512x512bb.jpg">
+    <h2>ESign</h2>
+
+    <a href="itms-services://?action=download-manifest&url=https://shahoalmani7-kurd.github.io/esign.plist">
+      <button class="btn esign">Download</button>
+    </a>
+  </div>
+
+  <!-- Video Star -->
+  <div class="card">
+    <img class="icon" src="https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/4d/f1/39/4df13965-bde6-07c3-5a19-2cb0bdb4b1f1/AppIcon-0-0-1x_U007emarketing-0-0-0-85-220.png/512x512bb.jpg">
+    <h2>Video Star</h2>
+
+    <a href="itms-services://?action=download-manifest&url=https://shahoalmani7-kurd.github.io/videostar.plist">
+      <button class="btn video">Download</button>
+    </a>
+  </div>
+
 </div>
 
 </body>
